@@ -20,7 +20,7 @@ return new class extends Migration
             $table->boolean('status')->default(true);
             // $table->foreignIdFor(Category::class);
             // $table->foreign('category_id')->on('categories')->references('id');
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('category_id')->constrained()->nullOnDelete();
             $table->softDeletes();
             $table->timestamps();
         });

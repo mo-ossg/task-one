@@ -18,6 +18,8 @@ class CategoryFactory extends Factory
     {
         return [
             //
+            'name'   => $this->faker->word(),
+            'status' => $this->faker->boolean(60)
         ];
     }
 }

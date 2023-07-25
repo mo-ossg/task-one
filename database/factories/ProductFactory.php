@@ -18,6 +18,10 @@ class ProductFactory extends Factory
     {
         return [
             //
+            'name'        => $this->faker->word(),
+            'description' => $this->faker->sentence(10),
+            'price'       => $this->faker->randomDigitNotNull(),
+            'status'      => $this->faker->boolean(40)
         ];
     }
 }

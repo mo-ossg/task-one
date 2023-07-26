@@ -21,7 +21,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::get('enable', function() {
 
-//     // return response()->json(['data'=>'welcome'])
+
+//     $data = Category::with('products')->get();
+
+//     return response()->json(['data' => $data]);
 
 // });
 
